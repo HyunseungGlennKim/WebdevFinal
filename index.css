@@ -1,0 +1,567 @@
+@charset "UTF-8";
+
+/*=[Set Initial setting]=============================================================*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}  
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+  
+html {
+  	background-color: white;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+} 
+
+/*=[Set Tag setting]=============================================================*/
+h2 {
+	font-size: 32px;
+	font-weight: bold;
+}
+
+h3 {
+	padding-bottom: 12px;
+	font-size: 24px;
+	font-weight: bold;
+	padding-top: 34px;
+}
+
+h4 {
+	font-size: 20px;
+}
+
+body {
+	font-family: Calibri;
+	margin: auto;
+	padding: auto;
+	background-color: #FFFFFF;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+
+
+header {
+	width: 100%;
+	height: 50px;
+	display: flex;
+	background-color: lightblue;
+}
+
+	header > h1 {
+		margin: auto;
+		color: #FFF;
+		font-size: 1.6em;
+		transition: .5s;
+	}
+
+nav {
+	width: 100%;
+	background-color: lightblue;
+	font-weight: bold;
+	color: #FFF;
+}
+
+	nav ul {
+		list-style: none;
+		padding: 0px;
+	}
+		
+		nav ul li {
+			padding: 5px;
+			max-width: 240px;
+			width: 100%;
+			text-align:center;
+		}
+		
+		nav ul li a {
+			color: #FFF;
+			text-decoration: none;
+			font-size: 1.3em;
+		}
+		
+		nav il li a:focus {
+		}
+
+
+/*=[Set Footer setting]=============================================================*/
+#footer {
+	background-color: lightblue;
+}
+
+#footer nav {
+	
+	width:100%;
+	max-width:960px;
+	margin:0 auto;
+}
+
+#footer .footerAddress p {
+   line-height: 18px;
+   text-align: center;
+   color:#fff;
+   font-size:11px;
+}
+
+#submitAndReset {
+	padding-top:12px;
+	/* text-align: center; */
+	margin: auto;
+}
+
+#submit, #reset {
+	height: 36px;
+	color: #333;
+	margin-top: 8px;
+	font-size: 16px;
+}
+
+#submit {
+	margin-right: 15px;
+}
+
+#submit:hover, #reset:hover {
+	cursor: pointer;
+}
+
+/*=[Personal class setting]=============================================================*/
+
+.bold {
+	font-weight: bold;
+}
+
+.center {
+	text-align: center;
+}
+
+.error {
+	color: red;
+}
+
+
+
+#loanProcessText h1 {
+	text-align: center;
+}
+
+#step_one, #step_two, #step_three {
+	text-align: center;
+}
+
+
+.container-1 div{
+	max-width: 960px;
+	
+	/* border: 1px #ccc solid; */
+	paddin:10px;
+}
+
+.call-outs-container {
+	max-width: 960px;
+	min-height: 600px;
+	padding: 40px 0 40px 0;
+	margin:0 auto;
+
+}
+
+/* .call-out {
+	padding: 20px;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	
+} */
+
+@media(min-width: 900px) {
+	
+	.container-1 {
+		display: flex; 
+		justify-content: space-between;
+	}
+	
+	.box {
+		flex-basis: 49%;
+	}
+	
+	.call-outs-container {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.call-out:nth-child(1) {background-color: #c0dbe2;}
+.call-out:nth-child(2) {background-color: #cdf1c3;}
+.call-out:nth-child(3) {background-color: #ccd9da;}
+
+#formCenter textarea {
+	display:block;	
+	width:100%;
+	max-height:200px;
+	padding-left: 5px;
+	box-sizing: border-box;
+	font-size: 14px;
+	color: #333;
+}
+
+.main-column {
+	width: 500px;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+.call-outs-container p {
+	line-height: 1.4em;
+}
+
+.img-wrap img {
+	width:100%;
+	margin: 24px 0;
+	max-width: 500px;
+}
+
+.sidebar-one {
+	width: 460px;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+
+
+/*Add Class*/
+
+.container-top-wrap {
+	width:100%;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 24px 0;
+	display:flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	box-sizing: border-box;
+	border-bottom: 1px dashed rgba(0,0,0,0.2);
+}
+
+.container-top-wrap .box {
+	width:50%;
+	padding: 0 12px;
+	box-sizing: border-box;
+}
+
+.container-top-wrap .box h3 {
+	padding-bottom: 24px;
+}
+
+.container-top-wrap .box p {
+	padding-bottom: 12px;
+	padding-top: 12px;
+}
+
+
+#loanProcessText h1 {
+	padding: 24px 0;
+	font-size: 32px;
+	font-weight: bold;
+	color: #303030;
+}
+
+#service_section {
+	padding-bottom: 180px;
+}
+
+nav ul {
+	padding-top: 24px;
+}
+
+nav ul li {
+	padding:0;
+}
+
+nav ul li a {
+	padding: 5px;
+	display:block;
+	position: relative;
+		
+}
+
+nav ul li:hover {
+	background-color: inherit !important;
+}
+
+nav ul li a:before {
+	content:'';
+	display: block;
+	position: absolute;
+	top:100%;
+	left:0;
+	right:0;
+	bottom:0;
+	background-color: #71a8bf;
+	transition: .5s;
+	z-index:1;
+}
+
+nav ul li a:hover:before {
+	top:0;
+}
+
+nav ul li span {
+	font-weight: bold;
+	color: #fff;
+	position: relative;
+	z-index: 2;
+}
+
+.steps-wrap {
+	width:100%;
+	max-width:960px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.steps-wrap li {
+	width: 33.3%;
+	min-height: 240px;
+	padding: 40px 24px;
+	box-sizing: border-box;
+}
+
+.steps-wrap li:nth-child(1) {background-color: #c0dbe2;}
+.steps-wrap li:nth-child(2) {background-color: #cdf1c3;}
+.steps-wrap li:nth-child(3) {background-color: #ccd9da;}
+
+.steps-wrap li h4 {
+	color: #fff;
+	padding-bottom: 20px;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+.steps-wrap li p {
+	padding-top:20px;
+	color: #fff;
+}
+
+.steps-wrap li .img_wrap {
+	height:140px;
+	display:flex;
+	justity-content: center;
+	text-align:center;
+	flex-wrap: wrap;
+	align-content:center;
+
+}
+
+.steps-wrap li .img_wrap .img_inner {
+	width: 100%;
+
+	
+}
+
+footer nav ul {
+	padding-top:0;
+}
+
+
+footer nav ul li {
+	padding:0;
+}
+
+.formWrap {
+	width:100%;
+	max-width: 840px;
+	margin:0 auto;
+	padding: 80px 60px 0;
+	box-sizing: border-box;
+}
+
+.personalInfo {
+	display: block;
+}
+
+#formCenter {
+	padding-bottom: 120px;
+}
+
+
+#personalInfo legend {
+	font-size: 26px;
+	font-weight: bold;
+	color: #333;
+	display: inline;
+	text-align: center;
+}
+
+footer nav ul li label {
+	font-size: 14px;
+	color: #303030;
+	display:inline;
+}
+
+
+#formCenter ul li {
+	padding-bottom: 12px;
+}
+
+#formCenter label {
+	display: block;
+	font-size: 14px;
+	color: #303030;
+	padding-bottom:4px;
+}
+
+#formCenter input {
+	width: 100%;
+	height: 32px;
+	padding:0 12px;
+	box-sizing: border-box;
+}
+
+#comment label {
+	display: block;
+}
+
+#comment legend {
+	display: none;
+}
+
+	header > h1 {
+		padding-top: 20px;
+		font-size: 2.1em;
+		align-items: center;
+		
+	}
+	nav ul {
+		padding-bottom: 20px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	
+	nav ul li {
+		border: none;
+		width: 33.3%;
+	}
+	
+nav ul li {
+	border: none;
+	width: 33.3%;
+}
+
+.footerWrap ul {
+	padding-top: 20px;
+}
+
+.footerWrap ul li {
+	width:16.66%;
+}
+
+section {
+	min-height: 90vh;
+}
+
+		.footerAddress {
+			padding:24px 0;
+			font-weight: 100;
+		}
+
+@media (max-width: 575.98px) {
+	nav ul {
+		padding-bottom:0;
+	}
+	
+	section {
+		min-height: inherit;
+	}
+	
+	#service_section {
+		padding-bottom:0;
+	}
+	
+	.footerWrap ul  {
+		padding-bottom: 20px;
+		border-bottom:1px solid rgba(255,255,255,0.4);
+	}
+	
+	.footerWrap ul li {
+		width:50%;
+		padding: 0 24px;
+		box-sizing: border-box;
+		text-align: left;
+	}
+	
+	.container-top-wrap .box {
+		width: 100%;
+	}
+		
+	.formWrap {
+		padding:80px 20px 0;
+	}
+	
+	.steps-wrap li {
+	width:100%;
+		min-height: 200px;
+	}
+	
+	.steps-wrap li .img_wrap .img_inner img {
+		width: auto;
+		height: 90px;
+	}
+	
+	.container-top-wrap .box h3 {
+		padding-bottom:8px;
+	}
+	
+	.main-column,
+	.sidebar-one {
+		width:100%;
+		
+		box-sizing: border-box;
+	}
+		
+		
+}
+

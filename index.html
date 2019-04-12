@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>Final</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+<script src="script.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Final Project</h1>
+	</header>
+	<nav>
+		<ul>
+			<li id="home_page"><a href="#"><span>Home</span></a></li>
+			<li id="service_page"><a href="#"><span>Service</span></a></li>
+			<li id="contact_page"><a href="#"><span>Contact</span></a></li>
+		</ul>
+	</nav>
+	<section id="home_section">
+		<div class="call-outs-container">
+			<div class="main-column">
+				<h2>Recent activity</h2>
+				<div>
+					<h3>Grow your business with Thinking Capital</h3>
+					<p>To get started, help us understand a little about your business and financing needs. 
+					   This will help us determine if our products are the right fit for you.</p>
+				</div>
+				<div class="img-wrap">
+					<img src="./images/home.jpg" alt="mainImage">
+				</div>
+			</div>
+			<div class="sidebar-one">
+				<h2>Recent activity</h2>
+				<h3>Giving Back</h3>
+				<p>We believe in giving back to the communities in which we live
+					and work. We are committed to making a positive impact on the lives
+					of others by investing in education, people and resources on both a
+					local and global scale.
+				</p>
+				<h3>Helping a child</h3>
+				<p>We have been a proud partner of the Boys and Girls Clubs of
+					Canada since 2004. We have raised over $2.5 Million through a
+					variety of programs, including scholarships, our employee matching
+					program, donated school supplies and supporting the Race for Kids.
+					We strongly believe in the club’s mission of empowering today's
+					youth through quality after school programs and will continue to
+					support these clubs in our communities across the country.
+				</p>
+				<h3>Local Giving</h3>
+				<p>Every year, our support center participates in an afternoon
+					of giving back to our communities by volunteering our time as a
+					team to a variety of charitable organizations in our communities.
+					In addition, goeasy offers 3 paid days off a year to allow our
+					employees to pursue their own personal passion and commitment for
+					their communities.
+				</p>
+			</div>
+		</div>
+	</section>
+	<section id="service_section">
+		<div class="container-top-wrap">
+			<div class="box">
+				<h3>Unsecured Personal Loans</h3>
+				<p>We'll help you rebuild your credit and get back to lower rates. Unsecured personal loans up to $15,000. Apply online. Get a decision in minutes.</p>
+			</div>
+			<div class="box">
+				<h3>Creditplus</h3>
+				<p>New! Build your credit and get $1,000 loan guaranteed</p>
+			</div>
+		</div>
+		<div id="loanProcessText">
+			<h1>Our loan process</h1>
+		</div>
+		<ul class="steps-wrap">
+			<li id="step_one">
+				<h4>Step 1</h4>
+				<div class="img_wrap">
+					<div class="img_inner">
+						<img src="images/step1.png" alt="StepOne">
+					</div>
+				</div>
+				<p>Apply <span class="bold">online</span> in minutes, or visit one of
+				  our <span class="bold">200+ locations</span>.
+				</p>
+			</li>
+			<li id="step_two">
+				<h4>Step 2</h4>
+				<div class="img_wrap">
+					<div class="img_inner">
+						<img src="images/step2.png" alt="StepTwo">
+					</div>
+				</div>
+				<p>Submit your <span class="bold">documents</span>.</p>
+			</li>
+			<li id="step_three">
+				<h4>Step 3</h4>
+				<div class="img_wrap">
+					<div class="img_inner">
+						<img src="images/step3.png" alt="StepThree">
+					</div>
+				</div>
+				<p>Get <span class="bold">approved</span>. Get your money <span class="bold">as soon as today</span>.</p>
+			</li>
+		</ul>
+	</section>
+	<section id="contact_section">
+		<div id="formCenter">
+			<form id="contactform" action="index.html" method="post">
+				<div class="formWrap">
+					<fieldset id="personalInfo">
+						<legend>Base Information</legend>
+						<ul>
+							<li>
+								<label for="fullname">Full Name</label> 
+								<input id="fullname" name="fullname" type="text" />
+								<p class="fullnameError error" id="fullname_error">* Required field</p>
+							</li>
+							<li>
+								<label for="custphone">Customer Phone Number</label> 
+								<input type="tel" name="custphone" id="custphone" placeholder="(123)123-4567">
+								<p class="custphoneError error" id="custphone_error">* Required field</p>
+								<p class="custphoneError error" id="custphoneformat_error">* Invalid Phone Number</p>
+							</li>
+							<li>
+								<label for="email">Email</label> 
+								<input id="email" name="email" type="text" />
+								<p class="emailError error" id="email_error">* Required field</p>
+								<p class="emailError error" id="emailformat_error">* Invalid email address</p>
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset id="comment">
+						<legend>Comment</legend>
+						<ul>
+							<li>
+								<label for="otherdetails">Comment</label> 
+								<textarea name="otherdetails" id="otherdetails" rows="5" placeholder="Comment"></textarea>
+								<p class="otherdatailsError error" id="otherdetails_error">* Required field</p>
+							</li>
+						</ul>
+					</fieldset>
+				</div>
+				<p class="center">
+					<button type="reset" id="reset">Reset</button>
+					<button type="submit" id="submit">Submit</button>
+				</p>
+			</form>
+		</div>
+	</section>
+	<footer id="footer">
+		<div class="footerWrap">
+			<nav>
+				<ul>
+					<li id="go_home"><a href="#"><span>Home</span></a></li>
+					<li><a href="#"><span>RSS</span></a></li>
+					<li><a href="#"><span>Terms</span></a></li>
+					<li><a href="#"><span>Privacy</span></a></li>
+					<li><a href="#"><span>Site Map</span></a></li>
+					<li id="contact_us"><a href="#"><span>Contact Us</span></a></li>
+				</ul>
+				<div class="footerAddress">
+					<p>
+						Copyright all right reserved By Hyunseung Kim<br/> 
+						1234 Main Street, Winnipeg, Manitoba, R3B 5W2
+					</p>
+				</div>
+			</nav>
+		</div>
+	</footer>
+</body>
+</html>
