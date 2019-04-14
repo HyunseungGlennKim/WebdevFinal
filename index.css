@@ -337,7 +337,7 @@ nav ul li a:before {
 	right:0;
 	bottom:0;
 	background-color: #71a8bf;
-	transition: .5s;
+	/* transition: 1s; */
 	z-index:1;
 }
 
